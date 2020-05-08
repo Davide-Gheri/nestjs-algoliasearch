@@ -1,0 +1,53 @@
+{
+  "name": "nestjs-algoliasearch",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://@github.com:Davide-Gheri/nestjs-algoliasearch.git",
+  "author": "Davide Gheri <davide@davidegheri.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint \"lib/**/*.ts\" --fix",
+    "format": "prettier \"lib/**/*.ts\" --write",
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "precommit": "lint-staged",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "prerelease": "npm run build",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-angular": "8.3.4",
+    "@nestjs/common": "7.0.9",
+    "@nestjs/core": "7.0.9",
+    "@types/node": "11.15.0",
+    "@typescript-eslint/eslint-plugin": "2.31.0",
+    "@typescript-eslint/parser": "2.31.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.20.2",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.2",
+    "prettier": "2.0.5",
+    "release-it": "13.5.8",
+    "ts-node": "8.10.1",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^6.0.0 || ^7.0.0",
+    "@nestjs/core": "^6.0.0 || ^7.0.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -c .commitlintrc.json -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
