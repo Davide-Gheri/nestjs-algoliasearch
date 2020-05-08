@@ -1,4 +1,5 @@
 # source
+.idea
 lib
 index.ts
 package-lock.json
@@ -6,3 +7,4 @@ package-lock.json
 tsconfig.json
 .prettierrc
 .commitlintrc.json
+.release-it.json
