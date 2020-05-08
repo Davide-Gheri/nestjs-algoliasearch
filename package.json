@@ -18,6 +18,7 @@
     "release": "release-it"
   },
   "devDependencies": {
+    "@algolia/client-search": "^4.2.0",
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-angular": "8.3.4",
     "@nestjs/common": "7.0.9",
@@ -25,6 +26,7 @@
     "@types/node": "11.15.0",
     "@typescript-eslint/eslint-plugin": "2.31.0",
     "@typescript-eslint/parser": "2.31.0",
+    "algoliasearch": "^4.2.0",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-import": "2.20.2",
@@ -37,7 +39,8 @@
   },
   "peerDependencies": {
     "@nestjs/common": "^6.0.0 || ^7.0.0",
-    "@nestjs/core": "^6.0.0 || ^7.0.0"
+    "@nestjs/core": "^6.0.0 || ^7.0.0",
+    "algoliasearch": "^4.2.0"
   },
   "lint-staged": {
     "*.ts": [
