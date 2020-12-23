@@ -50,10 +50,10 @@ import { AlgoliaModule } from 'nestjs-algoliasearch';
     TypeOrmModule.forFeature([
       TodoEntity,
     ]),
-    AlgoliaModule.forFeature([
+    AlgoliaModule.forFeature([{
       name: TodoEntity, // Or a string, this will be the index name
       options: {/* custom Algolia client index settings */},
-    ])
+    }])
   ],
 })
 export class TodoModule {}
