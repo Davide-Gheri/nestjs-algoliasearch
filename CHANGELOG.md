@@ -1,3 +1,10 @@
+# [1.0.0](https://github.com/Davide-Gheri/nestjs-algoliasearch/compare/0.1.3...1.0.0) (2021-07-01)
+
+
+### Features
+
+* updated dependencies, new build script ([d2c1b6f](https://github.com/Davide-Gheri/nestjs-algoliasearch/commit/d2c1b6f8dd26a38a30bdec538f8f2b0aacb981c1))
+
 # [1.0.0-beta.0](https://github.com/Davide-Gheri/nestjs-algoliasearch/compare/0.1.3...1.0.0-beta.0) (2021-07-01)
 
 
