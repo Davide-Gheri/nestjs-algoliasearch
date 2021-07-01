@@ -10,7 +10,7 @@
     "target": "es6",
     "sourceMap": false,
     "outDir": "./dist",
-    "rootDir": "./lib",
+//    "rootDir": "./lib",
     "strict": true
   },
   "include": [
