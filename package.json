@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier **/**/*.ts --ignore-path ./.prettierignore --write",
+    "test": "yarn lint",
     "lint": "eslint 'lib/**/*.ts'",
     "build": "rm -rf dist && ./build.js",
     "precommit": "lint-staged",
@@ -38,7 +39,7 @@
     "eslint-plugin-import": "^2.23.4",
     "estrella": "^1.4.1",
     "husky": "6",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^11.1.2",
     "pinst": "^2.1.6",
     "prettier": "^2.3.2",
     "reflect-metadata": "^0.1.13",
