@@ -30,7 +30,7 @@
     "@nestjs/testing": "^7.6.18",
     "@release-it/conventional-changelog": "^3.0.1",
     "@types/jest": "^27.0.2",
-    "@types/node": "14.17.4",
+    "@types/node": "16.10.2",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
     "algoliasearch": "^4.2.0",
